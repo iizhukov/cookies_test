@@ -1,0 +1,13 @@
+services:
+  cookies_test:
+    container_name: cookies_test
+    hostname: cookies_test
+    restart: always
+    build:
+      context: ./
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+    env_file:
+      - .env
