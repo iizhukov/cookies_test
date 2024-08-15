@@ -23,7 +23,7 @@ async def login(response: Response):
         key="token",
         value=COOKIE_VALUE,
         httponly=True,
-        samesite="Lax",
+        samesite="lax",
         secure=True
     )
     
